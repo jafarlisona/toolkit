@@ -12,7 +12,7 @@ export const calculatorSlice = createSlice({
     divide: (state,action) => {
       state.value = action.payload.num1 / action.payload.num2;
     },
-    substract: (state,action) => {
+    subtract: (state,action) => {
       state.value = action.payload.num1 - action.payload.num2;
     },
     multiply: (state,action) => {
@@ -21,6 +21,6 @@ export const calculatorSlice = createSlice({
   },
 });
 
-export const {adding,divide,substract,multiply} = calculatorSlice.actions;
+export const {adding,divide,subtract,multiply} = calculatorSlice.actions;
 
 export default calculatorSlice.reducer;

@@ -1,0 +1,117 @@
+button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  transition: all 00ms;
+  display: inline-block;
+  outline: none;
+
+  &:hover {
+    background-color: gray;
+    color: white;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+input {
+  width: 320px;
+  height: 30px;
+  border: 1px solid #ededed;
+  border-radius: 3px;
+  outline: none;
+}
+
+.counter {
+  padding: 15px;
+  width: 380px;
+  height: 280px;
+  border-radius: 10px;
+  background-color: lightsteelblue;
+
+  h4 {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 20px;
+  }
+
+}
+
+.calculator {
+  border-radius: 10px;
+  background-color: lightsteelblue;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  height: 350px;
+  padding: 25px;
+
+  .inputs {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .operators {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    width: 300px;
+
+  }
+
+  h3 {
+    text-align: center;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.todo {
+  background-color: lightsteelblue;
+  border-radius: 10px;
+  padding: 25px;
+
+  .input-todo {
+    display: flex;
+    gap: 30px;
+
+    input {
+      height: 40px;
+    }
+  }
+
+  ul {
+    li {
+      list-style: none;
+      color: rgb(40, 40, 40);
+    }
+  }
+}
+
+body {
+  display: grid;
+  place-content: center;
+}
